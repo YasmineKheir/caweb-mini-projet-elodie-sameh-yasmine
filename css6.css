@@ -1,0 +1,210 @@
+.content {
+    background-image: url(assets/img/night.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 1500px;
+    min-height: calc(100vh - 180px);
+    position: relative;
+    margin-top: 70px;
+    margin-bottom: 1000px;
+    text-align: center;
+}
+/*disque*/
+.neon,
+.show,
+.hide:target {
+    display: none;
+}
+.hide:target + .show,
+.hide:target ~ .neon {
+    display: block;
+}
+/*liste*/
+.un{
+    margin: 0;
+    padding: 36px 0 36px 84px;
+    list-style: none;
+    background-image: url(assets/img/roue.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    list-style: none;
+}
+/*Police*/
+@font-face {
+    font-family: "lovelo";
+    src: url('lovelo-LineBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p{
+    font-family:american Typewriter;
+    font-size: 1.2em;
+    text-align: justify;
+    margin-top: 40px;
+    display: inline-block;
+    padding: 60px;
+}
+h1 {
+    font-family: "lovelo";
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    text-shadow: #a51616 1px 3px, #a51616 -1px 3px, #a51616 -1px -3px, #a51616 1px -3px;
+    margin-top: 10px;
+}
+.Rgba_titre{
+    font-family: "lovelo";
+    color: #d01919;
+
+}
+
+
+/*disque*/
+
+#disque {
+    width: 200px;
+    height: 200px;
+    -webkit-transition: all 5s ease;
+    transition: all 5s ease;
+}
+
+#disque:hover  {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+
+}
+
+@media screen and (max-width: 1050px) {
+
+    .neon{
+        width: 100%;
+
+    }
+    .text1{
+        width: 77%;
+    }
+    .rgba{
+        width: 77%;
+    }
+    .tab-nav-label {
+        display: grid;
+        grid-column: 3;
+        padding-right: 20px;
+        cursor: pointer;
+    }
+
+    .tab-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: 1/4;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: all ease-in-out .4s;
+    }
+
+    .nav-checkbox input:checked ~ .tab-content {
+        max-height: 500px;
+    }
+
+    .tab-content li {
+        padding: 10px 0;
+    }
+
+    .footer-content p {
+        margin: 10px 20px;
+    }
+
+    .footer-content ul {
+        margin: 5px 0;
+    }
+
+    .footer-bottom p {
+        font-size: .8em;
+    }
+}
+@media screen and (max-width: 400px){
+    .section{
+        width: 60px;
+        /*display: block;*/
+    }
+}
+
+
+header {
+    text-align: center;
+    background-image: url("assets/img/urbain.jpg");
+    background-repeat: no-repeat;
+    height: 220px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    position: center;
+    margin: 50px;
+
+}
+/*Transparence*/
+#img_rgba{
+    width: 400px;
+    height: 300px;
+    margin-top: -200px;
+}
+.transparence_rgba{
+    background-color: red;
+    width: 400px;
+    height: 400px;
+
+
+}
+
+/*BODY*/
+body {
+    background-color: black;
+
+    font-family: Calibri;
+    color: white;
+    padding: 0px;
+
+}
+
+
+/* cadre lumineux  */
+
+
+.neon{
+
+    border: 4px solid #a51616;
+    border-radius: 20px;
+    height: 300px;
+    box-shadow: inset 0 0 20px #f04040,
+    inset 20px 0 20px #f04040,
+    inset -20px 0 20px #ff5959,
+    0 0 20px #f04040,
+    -10px 0 20px #f04040,
+    10px 0 20px #f04040;
+    text-align:justify;
+    margin: 0 auto;
+    margin-top: -150px;
+    background-color: rgba(150, 149, 149, 0.22)
+
+}
+
+
+/*Contenu */
+.rgba{
+    margin-top: 50px;
+    padding: 0 40px 0 40px;
+    position: relative;
+
+
+}
+.text1{
+    background-color: rgba(0, 0, 0, 0.63);
+    margin-top: 10px;
+    text-align: justify;
+}
